@@ -274,7 +274,7 @@ where \(B\) is the number of trees and \(T_b(x)\) is the prediction from the \(b
 For classification, the model usually predicts by majority vote:
 
 $$
-\hat{y} = \operatorname{mode}(T_1(x), T_2(x), \dots, T_B(x))
+\hat{y} = \text{mode}(T_1(x), T_2(x), \dots, T_B(x))
 $$
 
 Random Forests are useful for tabular data, non-linear relationships, mixed feature types, and situations where stronger predictive performance is needed than a single tree can provide.
@@ -330,8 +330,8 @@ $$
 For classification, the predicted class is usually the majority class among the neighbours:
 
 $$
-\hat{y} = \operatorname{mode}(y_1, y_2, \dots, y_k)
-$$
+\hat{y} = \text{mode}(y_1, y_2, \dots, y_k)
+$$ 
 
 KNN is useful when similar observations are expected to have similar outcomes. Because it depends on distances, scaling is especially important.
 
